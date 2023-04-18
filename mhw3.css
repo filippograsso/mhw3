@@ -1,0 +1,416 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  margin: 0px;
+}
+
+:root {
+  --main-orange: #DD4124;
+}
+
+/* ===== Scrollbar CSS ===== */
+ /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #FFFFFF #DD4124;
+  }
+
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DD4124;
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: #DD4124;
+  }
+
+  *::-webkit-scrollbar-track:active {
+    background-color: #C72F13;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #DD4421;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #DCDCDC;
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #DCDCDC;
+  }
+
+
+nav{
+  display: flex;
+  height: 10vh;
+  padding: 0px 1px 0px 1px;
+  border-top: 0.5px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav a{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  background-color: var(--main-orange);
+  border: 1px solid white;
+  transition: font .1s ease;
+}
+
+nav a:hover{
+  background-color: #c72f13;
+}
+
+nav a:active{
+  font-size: 1.45em;
+}
+
+#hamburger{
+  display: none;
+  width: 6.5vh;
+  height: 6.5vh;
+  background-image: url('https://icon-library.com/images/hamburger-icon-white/hamburger-icon-white-16.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header{
+  background-image: url('https://wallpaperaccess.com/full/1843912.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 67%;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+  border: 2px solid white;
+  z-index: -2;
+}
+
+header h1{
+  font-size: 2.67rem;
+  font-family: cursive;
+}
+
+#overlay{
+  background: rgba(0, 0, 0, .3);
+  height: 40vh;
+  width: 100%;
+  border: 2px solid white;
+  position: absolute;
+  z-index: -1;
+}
+
+#user{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 6.5vh;
+}
+
+#user img{
+  height: 13vh;
+  border-radius: 50%;
+  border: 2.5px solid var(--main-orange);
+  margin-bottom: 1vh;
+}
+
+#user p{
+  margin: 0px;
+  font-family: Arial;
+  font-size: 1.2rem;
+}
+
+#user hr{
+  width: 250px;
+  margin-top: 1vh;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article div{
+  width: 60%;
+}
+
+article section{
+  margin: 10vh 0px 5vh;
+  border-left: 3px solid var(--main-orange);
+  padding-left: 40px;
+}
+
+article hr{
+  display: none;
+  width: 90%;
+  background: var(--main-orange);
+  height: 1.5px;
+}
+
+.title{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 3em;
+  margin: 0px 0px 1vh 0px ;
+}
+
+.recensione{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: rgb(59, 64, 66);
+}
+
+.recensione img{
+  width: 33%;
+  min-width: 250px;
+  border-radius: 6px;
+}
+
+.recensione p{
+  margin: 0px;
+  padding-left: 5vh;
+  line-height: 1.3rem;
+  text-align: justify;
+}
+
+ul{
+  padding: 0px 20px;
+  margin: 0px;
+}
+
+ul span{
+  position: relative;
+  right: 20px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+}
+
+form label span{
+  letter-spacing: -0.5px;
+  margin-right: 3px;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+form input{
+  border: 2px solid var(--main-orange);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: cursive;
+  margin: 0px 4px 0px 0px;
+}
+
+form input[type="submit"]:hover{
+  cursor: pointer;
+  background-color:  #dcdcdc;
+}
+
+#risultati{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#risultati div{
+  width: 33%;
+}
+
+.errore{
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.errore p{
+  padding: 2vh 0px;
+}
+
+#spotify-wrapper{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 15vh;
+  border: solid 3px var(--main-orange);
+  border-bottom: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#spotify{
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#spotify-wrapper h2 {
+  font-family: cursive;
+  margin: 0px;
+  padding: 10px 0px 0px 20px;
+}
+
+.song{
+  padding: 5px 20px;  
+  text-align: center;
+  cursor: pointer;
+}
+
+.song .img-container{
+  position: relative;
+}
+
+.song .img-container img{
+  width: 250px;
+  border-radius: 8px;
+}
+
+.song .img-container div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 8px;
+  display: none;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/0/375.png');
+  background-position: 50%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.pause{
+  background-image: url('https://icons-for-free.com/iconfiles/png/512/pause+circle-1324760543672996560.png') !important;
+}
+
+.img-container:hover > div{
+  display: block;
+}
+
+#spotify h3,h4{
+  margin: 0px;
+}
+
+#spotify h3{
+  margin-top:10px;
+}
+
+footer{
+  display: flex;
+  height: 15vh;
+  background-color: var(--main-orange);
+  margin: 2px 1.5px;
+  margin-top: 10vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+@media (max-width: 900px) {
+  .recensione{
+    flex-direction: column;
+  }
+  .recensione p{
+    padding-left: 0px;
+    padding-top: 3vh;
+  }
+  article{
+    padding: 0vh 2vh;
+  }
+  article div, form{
+    width: 90%;
+  }
+  article section{
+    border-left: 0px;
+    padding-left: 0px;
+    margin-top: 5vh;
+  }
+  article hr{
+    display: block;
+  }
+  .errore p{
+    width: 90%;
+    margin: 0 auto;
+  }
+  #spotify{
+    height: 325px;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #spotify-wrapper{
+    width: 80%;
+  }
+  #spotify-wrapper h2{
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+  }
+  .song{
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  header h1{
+    font-size: 2rem;
+  }
+  nav a{
+    display: none;
+  }
+  nav{
+    justify-content: end;
+    align-items: center;
+    padding-right: 1.5vh;
+    background-color: var(--main-orange);
+    border: 2px solid white;
+  }
+  #hamburger{
+    display: block;
+  }
+  .title{
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 600px){
+  form label span, form input{
+    font-size: revert;
+  }
+
+}
+
+@media (max-width: 500px){
+  header h1{
+    font-size: 1.5rem;
+  }
+  .title{
+    font-size: 2em;
+  }
+}
